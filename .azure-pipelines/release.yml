@@ -34,7 +34,7 @@ parameters:
       - id: windows_x64
         jobName: 'Windows (x86)'
         runtime: win-x86
-        pool: GitClient-1ESHostedPool-intel-pc
+        pool: GitClientPME-1ESHostedPool-intel-pc
         image: win-x86_64-ado1es
         os: windows
 
