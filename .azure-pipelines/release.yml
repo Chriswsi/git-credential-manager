@@ -60,7 +60,7 @@ parameters:
       - id: linux_x64
         jobName: 'Linux (x64)'
         runtime: linux-x64
-        pool: GitClient-1ESHostedPool-intel-pc
+        pool: GitClientPME-1ESHostedPool-intel-pc
         image: ubuntu-x86_64-ado1es
         os: linux
 
