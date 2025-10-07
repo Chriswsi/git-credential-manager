@@ -76,7 +76,6 @@ variables:
   # - esrpClientId
   # - esrpTenantId
   # - esrpAuthAkvName
-  # - esrpAuthCertName
   # - esrpAuthSignCertName
 
 extends:
@@ -164,10 +163,10 @@ extends:
                   displayName: 'Sign payload'
                   inputs:
                     connectedServiceName: '$(esrpConnectionName)'
+                    useMSIAuthentication: true
                     appRegistrationClientId: '$(esrpClientId)'
                     appRegistrationTenantId: '$(esrpTenantId)'
                     authAkvName: '$(esrpAuthAkvName)'
-                    authCertName: '$(esrpAuthCertName)'
                     authSignCertName: '$(esrpAuthSignCertName)'
                     serviceEndpointUrl: '$(esrpEndpointUrl)'
                     folderPath: '$(Build.ArtifactStagingDirectory)\payload'
@@ -212,10 +211,10 @@ extends:
                   displayName: 'Sign installers'
                   inputs:
                     connectedServiceName: '$(esrpConnectionName)'
+                    useMSIAuthentication: true
                     appRegistrationClientId: '$(esrpClientId)'
                     appRegistrationTenantId: '$(esrpTenantId)'
                     authAkvName: '$(esrpAuthAkvName)'
-                    authCertName: '$(esrpAuthCertName)'
                     authSignCertName: '$(esrpAuthSignCertName)'
                     serviceEndpointUrl: '$(esrpEndpointUrl)'
                     folderPath: '$(Build.ArtifactStagingDirectory)\installers'
