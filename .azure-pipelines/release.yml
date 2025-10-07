@@ -457,10 +457,10 @@ extends:
                   displayName: 'Sign packages'
                   inputs:
                     connectedServiceName: '$(esrpConnectionName)'
+                    useMSIAuthentication: true
                     appRegistrationClientId: '$(esrpClientId)'
                     appRegistrationTenantId: '$(esrpTenantId)'
                     authAkvName: '$(esrpAuthAkvName)'
-                    authCertName: '$(esrpAuthCertName)'
                     authSignCertName: '$(esrpAuthSignCertName)'
                     serviceEndpointUrl: '$(esrpEndpointUrl)'
                     folderPath: '$(Build.ArtifactStagingDirectory)/installers'
